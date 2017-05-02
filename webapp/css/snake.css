@@ -1,0 +1,110 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+        
+        header h2{
+            font-family: Arial;
+            font-weight: bold;
+        }
+        
+        header #newGameButton {
+            display: inline-block;
+            margin: 20px auto;
+            width: 80px;
+            padding: 10px 10px;
+            background-color: skyblue;
+            font-family: Arial;
+            font-size: 15px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        /*圆角按钮*/
+        
+        header #newGameButton:hover {
+            background-color: blue;
+        }
+        
+        header #button {
+            display: inline-block;
+            margin: 20px auto;
+            width: 80px;
+            padding: 10px 10px;
+            background-color: skyblue;
+            font-family: Arial;
+            font-size: 15px;
+            font-size: 10;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        /*圆角按钮*/
+        
+        header #button:hover {
+            background-color: blue;
+        }
+        
+        canvas {
+            display: block;
+            border: medium double black;
+            margin: 10px auto;
+        }
+        
+        #score, #highestScore {
+            color: red
+        }
+        
+        #help {
+            width: 580px;
+            margin: 0 auto;
+            line-height: 17px;
+            color: black;
+            text-align: center;
+        }
+        
+        #help span {
+            float: left;
+            margin-right: 10px
+        }
+        
+        #help .box {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border: 1px solid white
+        }
+        
+        .foodMouse {
+            background: red
+        }
+        
+        .foodCoin {
+            background: yellow
+        }
+        
+        .foodFootball {
+            background: pink
+        }
+        
+        .block {
+            background: gray
+        }
+        
+        .skate {
+            background: burlywood
+        }
+        
+        .brake {
+            background: blueviolet
+        }
+
+
+

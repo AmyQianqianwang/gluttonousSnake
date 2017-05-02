@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇小游戏</title>
+    <link rel="stylesheet" type="text/css" href="css/snake.css">
+</head>
+<!--待办：刹车滑板毒品的放置还没调好。画成网格。蛇的位置和移动方向可以随机调整。优化：金币、足球，放置区域不同，加分不同。刹车滑板毒品。和难度级别联系起来。-->
+<body>
+    <header>
+        <h2>贪吃蛇&nbsp;&nbsp;
+            <span>得分:</span>&nbsp;&nbsp;<span id="score">0</span><span>分</span>&nbsp;&nbsp;
+            <span>最高分:</span>&nbsp;&nbsp;<span id="highestScore">0</span><span>分</span>
+        </h2>
+        <input type="button" value="新游戏" onclick="javascript:newgame();" id="newGameButton" />&nbsp;&nbsp;
+        <input type="button" id="button" value="开始" onclick="starts()" />&nbsp;
+        <input type="button" id="button" value="暂停" onclick="pause(this)" />&nbsp;&nbsp;
+    </header>
+    <div style="text-align:center;margin-bottom:20px">
+        地图行数：
+        <input type="text" name="row" value="600" /> 地图列数：
+        <input type="text" name="col" value="500" /> &nbsp;&nbsp;游戏难度：
+        <select name="level" onchange="speed = parseInt(this.value);">
+                <option value="10">简单</option>    
+                <option value="30">中等</option> 
+                <option value="50">困难</option> 
+        </select> &nbsp;&nbsp;食物类别：
+        <select name="foodKind" onchange="food = parseInt(this.value);">
+                   <option value="1">老鼠(1分）</option>    
+                   <option value="2">金币(2分)</option> 
+                   <option value="3">足球(3分）</option> 
+        </select> &nbsp;&nbsp;蛇皮肤：
+        <select name="skinColor" onchange="color = parseInt(this.value);">
+                <option value="1">黑色</option>    
+                <option value="2">绿色</option> 
+                <option value="3">蓝色</option> 
+        </select>
+    </div>
+    <canvas id="canvas">
+        Your browser doesn't support the <code>canvas</code> element.
+    </canvas>
+    <div id="help">
+        <span class="box foodMouse"></span><span>红色老鼠</span>
+        <span class="box foodCoin"></span><span>黄色金币</span>
+        <span class="box foodFootball"></span><span>粉色足球</span>
+        <span class="box block"></span><span>灰色路障</span>
+        <span class="box skate"></span><span>棕色滑板</span>
+        <span class="box brake"></span><span>紫色刹车</span>
+    </div>
+    <script type="text/javascript" src="js/snake.js"></script>
+</body>
+</html>
